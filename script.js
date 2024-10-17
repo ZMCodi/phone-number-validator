@@ -23,8 +23,9 @@ input.addEventListener("keydown", e => {
         } else {
             results.innerHTML += `<p>Invalid US number: ${input.value}</p>`;
         }
+        input.value = "";
     }
-    input.value = "";
+    
 })
 
 clearBtn.addEventListener("click", () => {
